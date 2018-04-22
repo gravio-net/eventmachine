@@ -29,7 +29,7 @@ See the file COPYING for complete licensing information.
 #endif
 
 static EventMachine_t *EventMachine;
-static Poller_t Poller = Poller_Default;
+static Poller_t Poller = Poller_Epoll;
 
 extern "C" void ensure_eventmachine (const char *caller = "unknown caller")
 {

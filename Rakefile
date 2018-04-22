@@ -5,7 +5,7 @@ require 'rake/clean'
 task :clobber => :clean
 
 desc "Build eventmachine, then run tests."
-task :default => [:compile, :test]
+task :default => [:compile]
 
 desc 'Generate documentation'
 begin
